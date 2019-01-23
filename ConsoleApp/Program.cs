@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BusinessCore;
 
 namespace ConsoleApp
 {
@@ -10,7 +7,9 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Segunda prueba (tras hola mundo)");
+            Car coche1 = new Car();
+            Motorcycle moto1 = new Motorcycle();
+            
             Console.ReadLine();
         }
     }
