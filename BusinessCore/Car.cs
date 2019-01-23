@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessCore
 {
-    class Car : Vehicle
+    public class Car : Vehicle
     {
         public Car() : base()
         {

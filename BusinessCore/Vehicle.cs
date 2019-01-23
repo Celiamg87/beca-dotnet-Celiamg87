@@ -6,29 +6,21 @@ using System.Threading.Tasks;
 
 namespace BusinessCore
 {
-    class Vehicle
+    public abstract class Vehicle
     {
         private int door;
         private int wheel;
         private string chasis;
         private bool extras;
         private string carroceria;
-        /*{
-            green,
-            yellow,
-            black,
-            white,
-            blue,
-            red
-        };*/
 
         public Vehicle()
         {
-            door = 5;
-            wheel = 4;
-            chasis = "bastidores";
-            extras = false;
-            carroceria = "black";
+            this.door = 5;
+            this.wheel = 4;
+            this.chasis = "bastidores";
+            this.extras = false;
+            this.carroceria = "black";
         }
 
         public Vehicle(int door, int wheel, string chasis,  bool extras, string carroceria)
@@ -40,52 +32,52 @@ namespace BusinessCore
             this.carroceria = carroceria;
         }
 
-        protected int getDoor()
+        public int getDoor()
         {
             return door;
         }
 
-        protected int getWheel()
+        public int getWheel()
         {
             return wheel;
         }
         
-        protected string getChasis()
+        public string getChasis()
         {
             return chasis;
         }
 
-        protected bool getExtras()
+        public bool getExtras()
         {
             return extras;
         }
 
-        protected string getCarroceria()
+        public string getCarroceria()
         {
             return carroceria;
         }
 
-        protected void setDoor(int door)
+        public void setDoor(int door)
         {
             this.door = door;
         }
 
-        protected void setWheel(int wheel)
+        public void setWheel(int wheel)
         {
             this.wheel = wheel;
         }
         
-        protected void setCahsis(string chasis)
+        public void setCahsis(string chasis)
         {
             this.chasis = chasis;
         }
 
-        protected void setExtras(bool extras)
+        public void setExtras(bool extras)
         {
             this.extras = extras;
         }
 
-        protected void setCarroceria(string carroceria)
+        public void setCarroceria(string carroceria)
         {
             this.carroceria = carroceria;
         }
