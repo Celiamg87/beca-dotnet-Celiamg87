@@ -7,8 +7,11 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Car coche1 = new Car();
-            Motorcycle moto1 = new Motorcycle();
+            Vehicle[] vehiculos = new Vehicle[10];
+
+            vehiculos[0] = new Car();
+            vehiculos[1] = new Motorcycle();
+            
             
             Console.ReadLine();
         }
